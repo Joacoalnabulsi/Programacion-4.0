@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+  background-color: #decfd4;
+  text-transform: uppercase;
+}
+
+.cv-container{
+  height: 100vh;
+  width: 1080px;
+  background-color: white;
+  margin: 0.625rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 1.5rem;
+  grid-template-rows: repeat(4, 1fr);
+}
+.navbar{
+  display: flex;
+  justify-content: center;
+   font-size: 25px;
+   padding: 5px;
+   background-color:#B20D30;
+   color: #F0E2E7;
+   height: 50px;
+ }
+ 
+.left-column{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.name{
+  margin: 1rem 1rem;
+  justify-self: center;
+  font-size: 55px;
+  text-transform: capitalize;
+  
+}
+.photo-large{
+  width:  200px; /*or 70%, or what you want*/
+  height: 300px; /*or 70%, or what you want*/
+  background-size: cover;
+  border: #B20D30 solid 3px;
+}
+
+.cv-photo{
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  grid-row-start: -5;
+  grid-row-end:-4;
+  grid-column: 2;
+  border-bottom: #B20D30 solid 2px;
+  
+}
+.Education{
+ 
+  margin-top: 4rem;
+  padding: 1rem;
+  border-top: #B20D30 solid 1px;
+ 
+}
+.education-list{
+  border-bottom: #B20D30 solid 1px;
+
+}
+
+.teaching{
+  
+  margin-top: 2rem;
+  grid-row-start: 2;
+  border-bottom: #B20D30 solid 1px;
+  padding: 1rem;
+}
+.teaching-list{
+  padding: 1rem;
+}
+.info{
+  
+  margin-top: 2rem;
+  grid-row-start: -4;
+  grid-row-end:-3;
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 9rem;
+}
+.info-list{
+ padding: 1rem;
+ 
+}
+
+.languages{
+  grid-column:1;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.625rem;
+  
+}
+.Skills{
+  grid-row: 4;
+  margin-left: 1rem;
+  border-top: #B20D30 solid 1px;
+  margin-bottom: 0.625rem;
+}
+h1, h2 {
+  color:  #0072bb;
+}
+.fa-caret-down{
+  grid-column: 2;
+  grid-row: -4;
+  margin-left: 10rem;
+  display: flex;
+  
+}
+
+
+#icon1:hover{
+  cursor: pointer;
+  
+}
+
+.fa-caret-up{
+  grid-column: 2;
+  grid-row: -4;
+  margin-left: 10rem;
+  
+ 
+}
+#icon2{
+  display: none;
+}
+#icon2:hover{
+  cursor: pointer;
+}
