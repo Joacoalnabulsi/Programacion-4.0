@@ -1,32 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
- 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Curriculum Vitae</title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./style.css" />
+  
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/05545a69ec.js" crossorigin="anonymous" defer></script>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <audio >
-    <source id="click" src="mixkit-mouse-click-close-1113.wav" type="audio/wav">
-        Tu navegador no soporta audio HTML5.
-</audio>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Proyecto Final</title>
 </head>
-<body>
 
-  <div class="navbar"> 
-    <h3>Curriculum vitae</h3>
- </div>
-  <!--Cv WRAPPER-->
-  <div class="cv-container">
-    <!--Left column-->
-    <div class="left-column">
-      <h1 id="name" class="name"></h1>
+<body>
+  <div class="navbar">
+    <div class="navbar_title"><h2>My curriculum Vitae</h2></div>
+     
+  </div>
+  <div class="cv">
+    <div class="yellow"></div>
+    <div class="info-wrapper">
+      <div id="cv-photo" class="cv-photo"></div> 
+      <h1 class="info-title">Contacto :</h1>
+      <ul class="info">
+        <i class="fa-solid fa-phone">
+          <li id="phone" class="phone"></li>
+        </i>
+        <i class="fa-solid fa-envelope">
+          <li class="email" id="email">Email</li>
+        </i>
+
+        <i class="fa-solid fa-location-dot">
+          <li class="location" id="city">City</li>
+        </i>
+        <li></li>
+      </ul>
+    </div>
+    <div class="right-column">
+      <div id="name" class="name"></div>
       <div class="Education">
         <h2>Education:</h2>
         <ul class="education-list">
@@ -38,48 +53,34 @@
           <li>B.A. in Spanish, June 2012 – University of Houston</li>
         </ul>
       </div>
-      
+      <div class="teaching">
+        <h2>Teaching Experiencies:</h2>
+        <ul class="teaching-list">
+          <li>Women in Hispanic Literature, Spanish 3350.</li>
+          <li>Mexican-American Literature, Spanish 3331.</li>
+          <li>Spanish-American Short Story, Spanish 4339</li>
+        </ul>
+      </div>
+      <div class="languages">
+        <h2>Languages:</h2>
+        <ul class="languages-list">
+          <li>English (native).</li>
+          <li>Spanish (bilingual oral and written fluency).</li>
+          <li>Classical Latin (written)</li>
+        </ul>
+      </div>
+      <div class="Skills">
+        <h2>Skills:</h2>
+        <ul class="Skills-list">
+          <li>Time management.</li>
+          <li>Efficiency.</li>
+          <li>Customer Service</li>
+          <li>Teamwork</li>
+          <li>Storytelling</li>
+        </ul>
+      </div>
     </div>
-    <div class="teaching">
-      <h2>Teaching Experiencies:</h2>
-      <ul class="teaching-list">
-        <li>Women in Hispanic Literature, Spanish 3350.</li>
-        <li>Mexican-American Literature, Spanish 3331.</li>
-        <li>Spanish-American Short Story, Spanish 4339</li>
-      </ul>
-    </div>
-    <div class="languages">
-      <h2>Languages:</h2>
-      <ul class="languages">
-        <li>English (native).</li>
-        <li>Spanish (bilingual oral and written fluency).</li>
-        <li>Classical Latin (written)</li>
-      </ul>
-    </div>
-    <div class="Skills">
-      <h2>Skills:</h2>
-      <ul class="Skills-list">
-        <li>Time management.</li>
-        <li>Efficiency.</li>
-        <li>Customer Service</li>
-        <li>Teamwork</li>
-        <li>Storytelling</li>
-      </ul>
-    </div>
-    
-    <!--Right column-->
-    <div id="cv-photo" class="cv-photo"></div> 
-      <i  onclick="play('mixkit-mouse-click-close-1113.wav')"  value="PLAY" id="icon2"  class="fa-solid fa-caret-up" > <h2>Personal Information:</h2></i>
-      <i  onclick="play('mixkit-mouse-click-close-1113.wav')"  value="PLAY" id="icon1"  class="fa-solid fa-caret-down">
-        <h2>Personal Information:</h2>
-      </i>
-      <div id="info" class="info"></div>
-     
- 
   </div>
- 
-  <script src="data.js" defer></script>
-  <script src="https://kit.fontawesome.com/05545a69ec.js" crossorigin="anonymous" defer></script>
+  <script src="index.js" type="module" defer></script>
 </body>
-
 </html>
