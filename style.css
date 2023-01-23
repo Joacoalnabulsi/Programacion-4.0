@@ -1,138 +1,152 @@
-*{
-  box-sizing: border-box;
+* {
   margin: 0;
-  font-family: "Roboto",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
 }
-body{
-  background-color: #decfd4;
-  text-transform: uppercase;
-}
-
-.cv-container{
-  height: 100vh;
-  width: 1080px;
-  background-color: white;
-  margin: 0.625rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;  
-  gap: 1.5rem;
-  grid-template-rows: repeat(4, 1fr);
-}
-.navbar{
-  display: flex;
-  justify-content: center;
-   font-size: 25px;
-   padding: 5px;
-   background-color:#B20D30;
-   color: #F0E2E7;
-   height: 50px;
- }
- 
-.left-column{
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
-.name{
-  margin: 1rem 1rem;
-  justify-self: center;
-  font-size: 55px;
-  text-transform: capitalize;
-  
-}
-.photo-large{
-  width:  200px; /*or 70%, or what you want*/
-  height: 300px; /*or 70%, or what you want*/
-  background-size: cover;
-  border: #B20D30 solid 3px;
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: white;
+  background-color:aliceblue;
 }
 
-.cv-photo{
-  margin-bottom: 2rem;
-  margin-left: 5rem;
-  grid-row-start: -5;
-  grid-row-end:-4;
-  grid-column: 2;
-  border-bottom: #B20D30 solid 2px;
-  
-}
-.Education{
- 
-  margin-top: 4rem;
-  padding: 1rem;
-  border-top: #B20D30 solid 1px;
- 
-}
-.education-list{
-  border-bottom: #B20D30 solid 1px;
+/* =================
+Layout
+================= */
 
+.cv {
+  height: 850px;
+  width: 800px;
+  background-color: #4f4f4f;
+  margin: 1rem auto;
 }
-
-.teaching{
-  
+.info-wrapper {
+  margin-left: 2rem;
   margin-top: 2rem;
-  grid-row-start: 2;
-  border-bottom: #B20D30 solid 1px;
-  padding: 1rem;
+  padding: 0.5rem;
+  position: relative;
+  
 }
-.teaching-list{
+.info-wrapper li { 
+  list-style: none;
+  display: flex;
+  margin-right: 1rem;
+   color: white;
+}
+.cv-photo {
+ 
+  height: 220px;
+  width: 200px;
+  object-fit: cover;
+  margin-left: 3rem;
+}
+.yellow {
+  background-color: #ffae00;
+  height: 720px;
+  width: 245px;
+  margin-left: 3.5rem;
+  position: absolute;
+}
+.info-title {
+  background-color: #4e4747;
+  color: white;
+  position: absolute;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  
+  padding: 10px;
+}
+.fa-phone {
+  
+  position: relative;
+  color: black;
+  display: flex;
+  margin-right: 1rem;
   padding: 1rem;
 }
 .info{
-  
-  margin-top: 2rem;
-  grid-row-start: -4;
-  grid-row-end:-3;
-  grid-column-start: 2;
   display: flex;
   flex-direction: column;
-  margin-left: 9rem;
+  padding: 1rem;
+  margin-top: 3rem;
 }
-.info-list{
- padding: 1rem;
- 
+.phone{
+  margin-left: 1rem;
+  font-size: 16px;
+}
+.fa-envelope{
+  position: relative;
+  color: black;
+  display: flex;
+  margin-right: 1rem;
+  padding: 1rem;
+  
+}
+.location{
+  margin-left: 1rem;
+  font-size: 9px;
+}
+.email{
+  margin-left: 0.7rem;
+  max-width:20px;
+  font-size: 9px;
 }
 
-.languages{
-  grid-column:1;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 0.625rem;
+.fa-location-dot{
+  position: relative;
+  color: black;
+  display: flex;
+  margin-right: 1rem;
+  padding: 1rem;
+}
+.right-column{
   
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 1rem;
+  top: 6rem;
+  right: 35rem;
+}
+.Education{
+  margin-bottom: 2rem;
+  border-bottom: #ffae00 1px solid;
+}
+.teaching{
+  margin-bottom: 2rem;
+  border-bottom: #ffae00 1px solid;
+}
+.languages{
+  margin-bottom: 2rem;
+  border-bottom: #ffae00 1px solid;
 }
 .Skills{
-  grid-row: 4;
-  margin-left: 1rem;
-  border-top: #B20D30 solid 1px;
-  margin-bottom: 0.625rem;
+  margin-bottom: 2rem;
+  border-bottom: #ffae00 1px solid;
 }
-h1, h2 {
-  color:  #0072bb;
-}
-.fa-caret-down{
-  grid-column: 2;
-  grid-row: -4;
-  margin-left: 10rem;
-  display: flex;
+/* =================
+Navigation
+================= */
+.navbar{
+  height: 70px;
+  width: 100%;
+  background-color: #ffae00;
   
+}
+.navbar_title {
+ border: 1px red solids;
+
 }
 
 
-#icon1:hover{
-  cursor: pointer;
-  
-}
+/* =================
+Typography
+================= */
 
-.fa-caret-up{
-  grid-column: 2;
-  grid-row: -4;
-  margin-left: 10rem;
-  
- 
-}
-#icon2{
-  display: none;
-}
-#icon2:hover{
-  cursor: pointer;
-}
+.name{
+  font-size: 3rem;
+  background-color: #ffae00;
+  font-weight: bold;
+}  
